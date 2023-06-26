@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock</title> 
-    <link rel="stylesheet" href="mob.css"> <!--oq?? cade o musica.css?-->
+    <link rel="stylesheet" href="musica.css">
 </head>
 <body>
 
 
-    <header class="menu">
-        <nav><ul>
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="solo.html">Solo</a></li>
-                 <li><a href="rock.html">Rock</a></li> 
-        </ul></nav>
+    <header class="header">
+        <!-- Logo -->
+        <a href="index.html" class="logo">ID</a>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="rock.html">Rock</a></li>
+                <li><a href="pop.html">Pop</a> </li>
+            </ul>
+        </nav>
     </header>
     
 
@@ -32,9 +39,9 @@
                <div class="desc-ROCK"> Cantores/Bandas de ROCK <div class="ROCK">           
 
                     <div>Texto sobre cantor1</div> <!--PS: não confunda "img-x" com "mX1.[formato]" pls-->
-                       <div>
-                               <img class="img-R" src="./mi.jpeg" alt="Busto do cantor Michel Jackson em um show.">
-                       </div>
+                        <div>
+                                <img class="img-temp" src="./mi.jpeg" alt="Busto do cantor Michel Jackson em um show.">
+                        </div>
                     </div>
        
                     <div class="ROCK">
