@@ -39,7 +39,8 @@
     background-color: tan;
 }
 .img-s {
-    width: 100%;
+    width: 1200px;
+    height:600px;
 }
 /*You're now leaving: SoloCity, not a fan of fertilizer are you? Weak.*/
 
@@ -76,6 +77,9 @@
 
 
 
+.img-mobile{
+    width: 100%;
+}
 
 /*Que isso prof? explica pfv.*/
 @media screen and (min-width: 768px) {
@@ -104,3 +108,142 @@
         display: grid;
     }
 }
+
+/*eu to cansado, so vo checar o codigo dps.*/
+:root{
+    --fundo: rgba(255, 208, 0, 0.863);
+    --fonte: rgb(0, 0, 0);
+    --hover: rgb(46, 45, 1);
+
+
+}
+body{
+    background-color: rgba(245, 169, 6, 0.822);
+}
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+.header{
+
+    background-color: var(--fonte);
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+}
+.logo{
+    display: inline-block;
+   color: var(--fundo);
+   font-size: 32px;
+  
+}
+#logo{
+  height: 10vh;
+
+}
+.sites{
+    display: inline
+}
+/*^ com isso, eu durmo.*/
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: var(--fundo);
+    overflow: hidden;
+}
+.menu2 a{
+    display: inline;
+    padding: 10px;
+    color: var(--fonte);
+    
+}
+.menu2 a:hover{
+    background-color: var(--hover);
+}
+.nav{
+    max-height: 0;
+    transition: max-height .1s ease-out;
+}
+.hamburger{
+    cursor: pointer;
+    float: right;
+    padding: 35px 20px;
+}
+.hamb-line{
+    background: var(--fonte);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+}
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--fonte);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+.side-menu{
+    display: none;
+}
+.side-menu:checked ~ nav{
+ max-height: 100%;
+}
+
+.side-menu:checked ~ .hamburger .hamb-line{
+    background: transparent;
+}
+.side-menu:checked ~ .hamburger .hamb-line::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.side-menu:checked ~ .hamburger .hamb-line::after{
+    transform: rotate(+45deg);
+    top: 0;
+}
+
+
+.img-ini{
+    width: 100%;
+}
+@media screen and (min-width: 768px){
+   .nav{
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+   }
+   .menu{
+    float: left;
+   }
+   .menu a:hover{
+    background-color: transparent;
+    color: var(--hover);
+   }
+   .hamburger{
+    display: none;
+   }
+   #logo{
+    width:25vh;
+    height: 25vh; 
+    
+
+   }
+    }
