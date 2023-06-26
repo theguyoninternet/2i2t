@@ -1,1 +1,56 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+background-color:rgb(248, 241, 250) ;
+}
+.item{
+    width: 370px;
+    height: 100px;
+    background-color: deeppink;
+    color:antiquewhite;
+    margin: 10px;
+    margin-left: 10px;
+
+}
+.conteudo{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;    
+}
+.barra{
+    background-color: rgb(255, 178, 106);
+    height: 20vh;
+    grid-area: barra;
+}
+.principal{
+    background-color: rgb(192, 148, 4);
+    height: 70vh;
+    grid-area: principal;
+}
+.lado{
+    background-color: rgb(134, 89, 6);
+    height: 70vh;
+    grid-area: lado
+}
+.rodape{
+    background-color: rgb(187, 178, 141);
+    height: 10vh;
+    grid-area: rodape;
+}
+.meu-site {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+                    "barra barra"
+                    "lado principal"
+                    "rodape rodape";
+
+}
+
+
+
+
+/*EU GASTEI 4 HORAS FAZENDO O CODIGO BONITINHO SO PARA PERDER ELE POR UM DEL, ISSO TUDO É PRA MAIS TARDE*/
