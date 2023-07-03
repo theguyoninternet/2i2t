@@ -8,77 +8,33 @@
     background-color: #3f3a36 ;
 }
 .conteudo-musica {
-    width: 100%;
+    width: 100vw;
 }
 .rodape {
     width: 100%;
     background-color: rgb(188, 204, 221);
     text-align: center;
+
 }
-.desc-estilo {
-    width: 100%;
-    background-color: tan;
+.definicao {
+    width:100vw;
+    padding: 5px;
+
 }
 
-/*You're now entering: SoloCity, enjoy your stay!*/
-
-.desc-solo {
-    width: 100%;
-    background-color: teal;
-}
-.desc-grupoS {
-    width: 100%;
-    background-color: tan;
-}
-.desc-bandaS {
-    width: 100%;
-    background-color: teal;
-}
-.desc-appS {
-    width: 100%;
-    background-color: tan;
-}
-.img-s {
+.img-x {
     width: 1200px;
     height:600px;
 }
-/*You're now leaving: SoloCity, not a fan of fertilizer are you? Weak.*/
-
-/*You're now entering: ROCKCity, do not make geology related puns, we've heard it before.*/
-.desc-ROCK {
-    width: 100%;
-    background-color: teal;
-}
-.desc-grupoR {
-    width: 100%;
-    background-color: tan;
-}
-.desc-bandaR {
-    width: 100%;
-    background-color: teal;
-}
-.desc-appR {
-    width: 100%;
-    background-color: tan;
-}
-.img-R {
-    width: 100%;
-}
-/*You're now leaving: ROCKCity, we hope a rock gets inside your shoe.*/
-
-
 
 .img-temp {
     width:100%;
 }
-
-
-
-
-
 .img-mobile{
     width: 100%;
 }
+
+
 
 /*Removido por conflito
 @media screen and (min-width: 768px) {
@@ -221,7 +177,7 @@ ul{
     top:0;
 }
 /* Responsiveness */
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .nav{
         max-height: none;
         top: 0;
@@ -247,8 +203,15 @@ ul{
 
 
 
-
-
+.fade {
+    margin: 50px;
+    padding: 50px;
+    background-color: lightgreen;
+    transition: opacity 0.7s ease-in;
+  }
+  
+  .fadeOut { opacity: 0; }
+  .fadeIn { opacity: 1; }
 
 
 
